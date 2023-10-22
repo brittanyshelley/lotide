@@ -37,10 +37,10 @@ console.log(eqArrays(array1, array6));
 console.log(eqArrays(array1, array7));
 console.log(eqArrays(array1, array8));
 
-assertEqual(eqArrays(array1, array2), true); // => should PASS
+assertEqual(eqArrays(array1, array2), false); // => should PASS
 assertEqual(eqArrays(array1, array3), true);
-assertEqual(eqArrays(array1, array4), true);
-assertEqual(eqArrays(array1, array5), true);
+assertEqual(eqArrays(array1, array4), false);
+assertEqual(eqArrays(array1, array5), false);
 assertEqual(eqArrays(array1, array6), true);
-assertEqual(eqArrays(array1, array7), true);
-assertEqual(eqArrays(array1, array8), true);
+assertEqual(eqArrays(array1, array7), false);
+assertEqual(eqArrays(array1, array8), false);
