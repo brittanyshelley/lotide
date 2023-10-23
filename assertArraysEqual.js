@@ -28,10 +28,10 @@ let array6 = [21, 22, 23];
 let array7 = [21, 22, undefined];
 let array8 = [21, NaN, 23];
 
-assertArraysEqual(eqArrays(array1, array2), false); // => should PASS
-assertArraysEqual(eqArrays(array1, array3), true);
-assertArraysEqual(eqArrays(array1, array4), false);
-assertArraysEqual(eqArrays(array1, array5), false);
-assertArraysEqual(eqArrays(array1, array6), true);
-assertArraysEqual(eqArrays(array1, array7), false);
-assertArraysEqual(eqArrays(array1, array8), false);
+assertArraysEqual(array1, array2); // => should PASS
+assertArraysEqual(array1, array3);
+assertArraysEqual(array1, array4);
+assertArraysEqual(array1, array5);
+assertArraysEqual(array1, array6);
+assertArraysEqual(array1, array7);
+assertArraysEqual(array1, array8);
