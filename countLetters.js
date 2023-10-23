@@ -36,3 +36,5 @@ const countLetter = function(string) {
 
 console.log(countLetter("LHL"));
 console.log(countLetters("LHL"));
+console.log(countLetters("Lighthouse in the house"));
+console.log(countLetter("Lighthouse in the house"));
