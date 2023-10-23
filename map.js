@@ -1,17 +1,14 @@
-const letterPositions = function(sentence) {
-  const results = {};
-  for (const letter of sentence) {
-    if (letter !== ' ') {
-      if (results[letter]) {
-        results[letter].push(sentence.indexOf(sentence));
-      } else {
-        results[letter] = [sentence.indexOf(letter)];
-      }
-    }
+const words = ["ground", "control", "to", "major", "tom"];
+const map = function(array, callback) {
+  const results = [];
+  for (let item of array) {
+    results.push(callback(item));
   }
   return results;
-};
+}
 
+const results1 = map(words, word => word[0]);
+console.log(results1);
 
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) return false;
@@ -25,7 +22,6 @@ const eqArrays = function(arr1, arr2) {
     return true;
   }
 };
-
 const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
     console.log(`✅✅✅ Assertion Passed: ${array1} === ${array2}`);
@@ -33,5 +29,3 @@ const assertArraysEqual = function(array1, array2) {
     console.log(`🛑🛑🛑 Assertion Failed: ${array1} !== ${array2}`);
   }
 };
-
-assertArraysEqual(letterPositions("hello").e, [1]);
