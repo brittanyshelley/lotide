@@ -1,26 +1,18 @@
-const countLetters = function(word) {
-  // Create the object which will store the occurrences
-  const count = {};
-
-  // Loop over letters
-  for (let i = 0; i < word.length; i++) {
-    const letter = word[i];
-
-    // if the property isn't in the object, it means that the letter is a new one and we'll create this property and assign it the value 1
-    if (!count[letter]) {
-      count[letter] = 1;
-
-      // else, the property is already there and we just increment it by 1
-    } else {
-      count[letter]++;
-    }
-  }
-
-  return count;
-};
+//This function also includes the spaces
+//const countLetter = function(word) {
+  //const count = {};
+  //for (let i = 0; i < word.length; i++) {
+    //const letter = word[i];
+    //count[letter] = 1;
+    //} else {
+      //count[letter]++;
+    //}
+  //}
+  //return count;
+//};
 
 
-const countLetter = function(string) {
+const countLetters = function(string) {
   const results = {};
   for (const letter of string) {
     if (letter !== ' ') {
@@ -42,7 +34,10 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-console.log(countLetter("LHL"));
+//console.log(countLetter("LHL"));
 console.log(countLetters("LHL"));
 console.log(countLetters("Lighthouse in the house"));
-console.log(countLetter("Lighthouse in the house"));
+//console.log(countLetter("Lighthouse in the house"));
+const result = countLetters("LHL");
+assertEqual(result['L'], 2);
+assertEqual(result['H'], 1);
