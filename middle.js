@@ -24,8 +24,7 @@ const middle = function(array) {
   let middle = '';
   let newArray = [];
   if (array.length % 2 === 1) {
-    middle = (array.length - 1) / 2;
-    newArray.push(array[middle]);
+    newArray.push(array[(array.length - 1) / 2]);
   } else if (array.length % 2 === 0) {
     middle = (array.length / 2);
     newArray.push(array[middle-1], array[middle])
@@ -44,3 +43,7 @@ console.log(middle([1, 2, 3, 4, 5])); // => [3]
 console.log(middle([1, 2, 3, 4])); // => [2, 3]
 console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
 
+assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7]), [4]);
+assertArraysEqual(middle([1, 2]), []);
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
