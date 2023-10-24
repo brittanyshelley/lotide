@@ -16,9 +16,10 @@ const exampleObj = {
 };
 
 const findKey = function (object, callback) {
-  for (key in object) {
-    if (callback(object[key])) {
-      return key; 
+  const keys = Object.keys(object);
+  for (let i = 0; i < keys.length; i++) {
+    if (callback(object[keys[i]])) {
+      return keys[i]; 
     }
   }
   return undefined;
