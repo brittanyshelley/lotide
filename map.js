@@ -29,3 +29,6 @@ const assertArraysEqual = function(array1, array2) {
     console.log(`🛑🛑🛑 Assertion Failed: ${array1} !== ${array2}`);
   }
 };
+
+const expected_output = ['g', 'c', 't', 'm', 't'];
+assertArraysEqual(results1, expected_output);
