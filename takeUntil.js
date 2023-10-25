@@ -24,7 +24,7 @@ const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Re
 
 const takeUntil = (array, callback) => {
   const result = [];
-  for (element of array) {
+  for (let element of array) {
     if (callback(element)) {
       break;
     } else {
