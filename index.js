@@ -14,6 +14,7 @@ const eqObjects = require('./eqObjects');
 const findKey = require('./findKey');
 const findKeyByValue = require('./findKeyByValue');
 const assertEqual = require('./assertEqual');
+const flatten = require('./flatten');
 
 
 module.exports = {
@@ -32,5 +33,6 @@ module.exports = {
   eqObjects: eqObjects,
   findKey: findKey,
   findKeyByValue: findKeyByValue,
-  assertEqual: assertEqual
+  assertEqual: assertEqual,
+  flatten: flatten
 };
