@@ -1,4 +1,4 @@
-const assertEqual = require('./assertEqual');
+const assertEqual = require('chai').assert
 
 const tail = function(arr) {
   return arr.slice(1);
