@@ -1,3 +1,5 @@
+const assert = require('chai').assert;
+
 const middle = function(array) {
   if (array.length <= 2) return [];
   let middle = '';
