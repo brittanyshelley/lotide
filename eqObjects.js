@@ -1,15 +1,3 @@
-const assertEquals = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject= { size: "medium", color: "red" };
-const longSleeveShirtObject= { size: "medium", color: "red", sleeveLength: "long" };
-
 const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length !== Object.keys(object2).length) {
     return false; 
@@ -35,6 +23,4 @@ const eqObjects = function(object1, object2) {
   } 
   return true;
 };
-
-assertEquals(eqObjects(shirtObject , anotherShirtObject), true); // => true
-assertEquals(eqObjects(shirtObject , longSleeveShirtObject), false);
+module.exports = eqObjects;
