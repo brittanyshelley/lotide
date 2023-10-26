@@ -1,8 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@brittanyshelley/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "library of various functions for working with lotide data",
   "directories": {
     "test": "test"
   },
