@@ -4,10 +4,10 @@ describe("#middle", () => {
   it("returns [2] for [1, 2, 3]", () => {
     assert.deepEqual(middle([1, 2, 3]), [2]);
   });
-});
-it("returns '[2, 3]' for [1, 2, 3, 4]", () => {
+  it("returns '[2, 3]' for [1, 2, 3, 4]", () => {
   assert.deepEqual(middle([1, 2, 3, 4]), [2, 3]); 
-});
+  });
+});  
 
 //let array1 = [21, 22, 23, 24, 25, 26, 27, 28, 29];
 //let array2 = [1, 2, 3, 4, 5, 6, 7, 8];

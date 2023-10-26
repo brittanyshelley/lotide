@@ -5,10 +5,10 @@ describe("#tail", () => {
   it("returns 3 for [1, 2, 3]", () => {
     assert.deepEqual(tail([1, 2, 3]), [2, 3]);
   });
-});
-it("returns '[]' for ['5']", () => {
-  assert.deepEqual(tail([5]), []); 
-});
+  it("returns '[]' for ['5']", () => {
+    assert.deepEqual(tail([5]), []); 
+  });
+});  
 
 //const words = ["Lighthouse", "Labs", "Bootcamp"];
 //const result = tail(words);
