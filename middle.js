@@ -11,5 +11,5 @@ const middle = function(array) {
     newArray.push(array[middle-1], array[middle])
   } 
   return newArray;
-}
+};
 module.exports = middle;
